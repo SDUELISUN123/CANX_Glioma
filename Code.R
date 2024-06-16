@@ -1,5 +1,5 @@
 ### Author : Qingyuan Sun, Shandong University. 
-### Email : sunqingyuansdu@163.com
+### Email : sunqingyuansdu@163.com.
 
 
 ##### 1 Nomalization of bulk RNA sequceing data #####
@@ -426,4 +426,4 @@ calcPhenotype(trainingExprData = GDSC2_Expr,
               removeLowVaringGenesFrom = 'rawData')
 
 ### Author : Qingyuan Sun, Shandong University. 
-### Email : sunqingyuansdu@163.com
+### Email : sunqingyuansdu@163.com.
