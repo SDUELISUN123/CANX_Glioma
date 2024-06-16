@@ -306,7 +306,7 @@ sqy<-RenameIdents(sqy,
 sqy$cell_type<-sqy@active.ident
 sqy@active.ident<-sqy$cell_type
 pdf(file = "UMAP_cluster_celltype.pdf",width=5,height = 4)
-UMAPPlot(object = sqy, label = TRUE, cols=cors)  #整体的umap
+UMAPPlot(object = sqy, label = TRUE, cols=cors)
 dev.off()
 
 Mono_Macro<-c("CD68","CD14")
@@ -322,7 +322,7 @@ table(sqy$cell_type)
 malignant<-sqy[,sqy$cell_type%in%"Malignant"]
 malignant@active.ident<-malignant$seurat_clusters
 pdf(file = "UMAP_cluster_malignant.pdf",width=5,height = 4)
-UMAPPlot(object = malignant, label = TRUE, cols=cors)  #整体的umap
+UMAPPlot(object = malignant, label = TRUE, cols=cors)
 dev.off()
 DotPlot(malignant,features = "CANX")
 VlnPlot(malignant,features = "CANX",cols = cors,sort = TRUE)+
@@ -356,7 +356,7 @@ malignant$CANX_type<-malignant@active.ident
 table(malignant@active.ident)
 malignant@active.ident<-malignant$CANX_type
 pdf(file = "UMAP_cluster_malignant_canx_exp.pdf",width=5,height = 4)
-UMAPPlot(object = malignant, label = TRUE, cols=c("#FF7A2D","#4262FF"))  #整体的umap
+UMAPPlot(object = malignant, label = TRUE, cols=c("#FF7A2D","#4262FF"))
 dev.off()
 
 
